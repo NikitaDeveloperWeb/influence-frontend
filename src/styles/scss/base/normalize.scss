@@ -1,3 +1,20 @@
-*{
+* {
   background: var(--color-main-bg);
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  color: var(--color-font-main);
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#root {
+  width: inherit;
+  height: inherit;
+}
+a {
+  text-decoration: none;
 }

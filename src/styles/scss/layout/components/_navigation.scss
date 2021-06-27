@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  background: inherit;
+  a {
+    background: inherit;
+    margin-left: 0.3rem;
+    svg {
+      font-size: $iconsSize;
+      background: inherit;
+    }
+    &:hover {
+      svg {
+        fill: var(--color-link-hover);
+        transition: $transitionLink;
+      }
+    }
+    .active {
+      fill: var(--color-link-hover);
+      transition: $transitionLink;
+    }
+  }
+}

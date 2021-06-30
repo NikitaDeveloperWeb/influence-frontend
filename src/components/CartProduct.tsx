@@ -27,7 +27,7 @@ function CartProduct({ title, images, id, price, hit, bookmarks }: CartProductPr
   };
 
   return (
-    <div className="cartProduct">
+    <div className="cartProduct shadow">
       <div className="cartProduct__hit">
         <BookmarkIcon
           className={activeBook ? 'active' : ''}

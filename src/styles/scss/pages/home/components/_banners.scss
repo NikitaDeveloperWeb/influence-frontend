@@ -25,11 +25,43 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: $fixPaddingBlock + 10;
     &:hover {
       opacity: 0.9;
       -webkit-transition: all 0.7s ease;
       -moz-transition: all 0.7s ease;
       transition: all 0.7s ease;
+    }
+
+    .steps {
+      width: 100px;
+      display: flex;
+      justify-content: space-between;
+      background: var(--color-bg-opacity-null);
+      &__curcle {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        z-index: 100;
+        border-radius: 50%;
+        background: var(--color-bg-opacity-null);
+        border: 3px solid var(--color-link-hover);
+      }
+      &__curcle_active {
+        -webkit-transition: all 0.7s ease;
+        -moz-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        z-index: 100;
+        border-radius: 50%;
+        background: var(--color-link-hover);
+        border: 3px solid var(--color-link-hover);
+      }
     }
   }
 }

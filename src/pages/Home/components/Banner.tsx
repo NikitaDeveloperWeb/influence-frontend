@@ -34,7 +34,13 @@ function Banner({ banners }: BannerProps) {
     }
   };
   let BG = BANNERS[active].src;
-
+  let count = 0;
+  if (count < 3) {
+    setTimeout(() => handlerActiveIncrement(active), 3000);
+    count++;
+  } else {
+    count = 0;
+  }
   return (
     <div className="banner">
       <KeyboardArrowRightIcon
@@ -51,7 +57,11 @@ function Banner({ banners }: BannerProps) {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         }}>
-        <div className="banner__content"></div>
+        <div className="steps">
+          <div className={active === 0 ? 'steps__curcle_active' : 'steps__curcle'}></div>
+          <div className={active === 1 ? 'steps__curcle_active' : 'steps__curcle'}></div>
+          <div className={active === 2 ? 'steps__curcle_active' : 'steps__curcle'}></div>
+        </div>
       </Link>
       <KeyboardArrowRightIcon
         onClick={() => {

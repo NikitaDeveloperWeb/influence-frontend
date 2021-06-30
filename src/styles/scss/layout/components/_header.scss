@@ -3,6 +3,7 @@
   height: 0 auto;
   padding: $fixPaddingBlock;
   background: var(--color-header-bg);
+  position: relative;
   &__up {
     background: inherit;
     display: flex;

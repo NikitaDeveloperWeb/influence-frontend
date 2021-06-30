@@ -4,4 +4,11 @@
 
 .layout {
   width: inherit;
+  &__content {
+    width: 100%;
+    padding: $fixPaddingBlock;
+    // overflow-y: scroll;
+    // height: 100vh;
+    padding-bottom: 100px;
+  }
 }

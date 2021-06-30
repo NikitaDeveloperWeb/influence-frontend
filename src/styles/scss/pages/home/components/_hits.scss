@@ -1,0 +1,22 @@
+.hits {
+  width: 100%;
+  padding: $fixPaddingBlock;
+  border-top: 1px solid var(--color-border-menu);
+  margin-top: $fixMarginTop;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  ul {
+    margin-top: $fixMarginTop + 10;
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  a {
+    font-size: 0.5rem;
+    align-self: center;
+    margin-top: $fixMarginTop;
+  }
+}

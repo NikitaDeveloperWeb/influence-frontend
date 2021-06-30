@@ -17,7 +17,7 @@ function CategoriesButton({ open, onClick }: CategoriesButtonProps) {
               ? {
                   transform: 'rotate(180deg)',
                   transition: '0.5s',
-                  transitionTimingFunction: 'linear',
+                  // transitionTimingFunction: 'linear',
                 }
               : { transform: 'rotate(360deg)', transition: '0.5s' }
           }>
